@@ -6,3 +6,6 @@ env
 *.mp4
 *.ts
 .git
+courses
+*pycache*
+*.log

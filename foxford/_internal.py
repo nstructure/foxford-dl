@@ -139,14 +139,17 @@ class InternFoxfordLesson(FoxfordLessons):
         
     def get_presentation(self):
         presentation = None
+        index = 0
         for event in self._events:
             data = event.get('data', {})
             url = data.get('url', '')
             title = data.get('title', '')
-            if '.pdf' in title:
+            index += 1
+            if 'welcome' in title: continue
+            if '.pdf' in url:
                 file_id = url[url.rfind('/')+1:]
                 presentation = InternFoxfordLessonPresentation(file_id, title, self)
-                break
+                if index > 50: break
         
         return presentation
     
