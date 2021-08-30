@@ -1,0 +1,8 @@
+temp
+.vscode
+.env
+env
+*.json
+*.mp4
+*.ts
+.git
