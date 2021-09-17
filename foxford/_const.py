@@ -18,7 +18,7 @@ ANSWER_ATTEMPTS = 'https://foxford.ru/api/lessons/{lesson_id}/tasks/{task_id}/an
 REFRESH_API = 'https://foxford.ru/api/ulms/accounts/me/refresh'
 
 MASTER = 'https://storage.svc.netology-group.services/api/v2/backends/yandex/sets/hls.webinar.foxford.ru::{stream_id}/objects/long.v2.yandex.master.m3u8'
-WEBINAR_SCOPE = 'https://dispatcher-vod-ng.svc.netology-group.services/api/v1/audiences/foxford.ru/webinars/{scope}'
+WEBINAR_SCOPE = 'https://dispatcher-webinar-ng.svc.netology-group.services/api/v1/audiences/foxford.ru/webinars/{scope}'
 EVENTS = 'https://storage.svc.netology-group.services/api/v2/sets/eventsdump.foxford.ru::{event_room_id}/objects/json'
 CONTENT = 'https://storage.svc.netology-group.services/api/v2/sets/content.webinar.foxford.ru::{scope}/objects/{filename}'
 
