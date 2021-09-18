@@ -142,6 +142,7 @@ class InternFoxfordLesson(FoxfordLessons):
         index = 0
         for event in self._events:
             data = event.get('data', {})
+            if not data: data = {}
             url = data.get('url', '')
             title = data.get('title', '')
             index += 1

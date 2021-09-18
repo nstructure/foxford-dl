@@ -225,7 +225,9 @@ class FoxfordBuilder(object):
         )
         try:
             res = res.json()
-            event_room_id = next(iter(extract_json(res, 'event_room_id')), None)
+            possible_rooms = extract_json(res, 'event_room_id')
+            if possible_rooms:
+                event_room_id = possible_rooms[-1]
         except:
             pass
 
