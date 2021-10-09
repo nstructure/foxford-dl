@@ -94,7 +94,7 @@ class FoxfordBuilder(object):
             }
         )
 
-        if res.status_code == 200:
+        if res.status_code != 403:
             return {'login': 'successful'}
         else:
             return {'login': 'failed'}
